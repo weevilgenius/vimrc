@@ -18,8 +18,8 @@ set list listchars=tab:»·,trail:·   "show visible tabs and trailing spaces
 set printoptions=paper:letter,header:0,number:n,syntax:y,duplex:off,wrap:y
 set tabpagemax=50               "increase maximum number of tabs to 50
 set nobackup nowritebackup      "disable file backups
-set directory^=$HOME/.vim_swap// "put all swap files together in one place
-set spellfile=~/.vim/spell/en.utf-8.add "custom words for the spelling dictionary
+set directory^=~/.vim_swap// "put all swap files together in one place
+set spellfile=~/.vim_runtime/spell/en.utf-8.add "custom words for the spelling dictionary
 set ssop-=options               " don't save global/local values in a session
 set ssop-=folds                 " don't save folds in a session
 if version >= 730
