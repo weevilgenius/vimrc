@@ -44,8 +44,14 @@ if !exists("autocommands_loaded")
 
 endif
 
-" add shift-left and shift-right bindings for changing tabs
+" color scheme
+set background=light
+colorscheme solarized
+
+" Options that apply only to gvim
 if has("gui_running")
+
+    " add shift-left and shift-right bindings for changing tabs
     nmap <silent> <S-Left> :tabprev<Cr>
     nmap <silent> <S-Right> :tabnext<Cr>
     imap <silent> <S-Left> <Esc>:tabprev<Cr>
@@ -55,11 +61,7 @@ if has("gui_running")
 
     " remove GUI toolbar
     set guioptions-=T
-endif
 
-if has("gui_running")
-    set background=light
-    colorscheme solarized
 endif
 
 
