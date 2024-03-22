@@ -61,6 +61,15 @@ if has("gui_running")
     " remove GUI toolbar
     set guioptions-=T
 
+    " GUI font
+    if has("gui_macvim")
+        " (in MacVim, Fira Code font looks best with 'Use macOS line spacing calculation' disabled)
+        set macligatures
+        set guifont=FiraCode-Retina:h12
+    else
+        set guifont=Fira\ Code:h12
+    endif
+
 endif
 
 
