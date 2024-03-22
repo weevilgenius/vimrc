@@ -44,8 +44,7 @@ if !exists("autocommands_loaded")
 
 endif
 
-" color scheme
-set background=light
+" color scheme (autodetects light/dark mode)
 colorscheme solarized
 
 " Options that apply only to gvim
